@@ -1,0 +1,39 @@
+.messages {
+    background-color: var(--color-grey-light);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.message__icon-box {
+    padding: 4rem;
+    border: 3px solid var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message__icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* mobile land*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+    .message__icon-box {
+        width: 7rem;
+        height: 7rem;
+        margin: 0 auto .5rem auto;
+    }
+    
+}
+
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .message__icon-box {
+        width: 7rem;
+        height: 7rem;
+        margin: 0 auto .5rem auto;
+    }
+}

@@ -1,0 +1,80 @@
+.carousel__container {
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel__photo {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carousel__text-box {
+    margin-left: 5rem;
+}
+
+.carousel__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.carousel__user-name {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: var(--color-black);
+    margin-top: 1rem;
+}
+
+.carousel__user-name::before {
+    content: '';
+    width: 6rem;
+    height: 3px;
+    background-color: var(--color-primary);
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+/* mobile land*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .carousel__container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        display: block;
+    }
+    
+    .carousel__photo {
+        display: block;
+        margin: 0 auto .5rem auto;
+    }
+    
+    .carousel__text-box {
+        margin-left: 0;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .carousel__container {
+        padding-left: 7rem;
+        padding-right: 7rem;
+        display: block;
+    }
+    
+    .carousel__photo {
+        display: block;
+        margin: 0 auto .5rem auto;
+    }
+    
+    .carousel__text-box {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,94 @@
+.teams {
+    margin-top: 9rem;
+}
+
+.teams-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+.card__photo-box {
+    width: 100%;
+    height: 47rem;
+    position: relative;
+}
+
+.card__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__photo--hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-image: linear-gradient(to bottom, 
+                    rgba(243, 129, 129, .8), 
+                    rgba(252, 227, 138, .8));
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.card__photo-box:hover .card__photo--hover {
+    opacity: 1;
+}
+
+.card__name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--color-black);
+    margin-top: 3rem;
+}
+
+.card__position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.card__photo--hover .social-boxs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__photo--hover .social-boxs .social-box {
+    width: 5rem;
+    height: 5rem;
+    padding: 1.5rem;
+    display: inline-block;
+    background-color: var(--color-primary-light);
+}
+
+.card__photo--hover .social-boxs .social-box:not(:last-child) {
+    border-right: 1px solid var(--color-primary);
+}
+
+.card__photo--hover .social-boxs .social-box .social-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.card__photo--hover .social-boxs .social-box:hover,
+.card__photo--hover .social-boxs .social-box:hover .social-icon {
+    background-color: var(--color-primary);
+    color: white;
+}

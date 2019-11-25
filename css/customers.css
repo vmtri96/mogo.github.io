@@ -1,0 +1,9 @@
+.customers {
+    margin-top: 9rem;
+    background-color: var(--color-grey-light);
+    padding: 7rem 0 7rem 0;
+}
+
+.customers__logo {
+    width: 100%;
+}

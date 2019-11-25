@@ -1,0 +1,48 @@
+.devices {
+    background-image: linear-gradient(to bottom, 
+                    rgba(255, 255, 255, .8), 
+                    rgba(255, 255, 255, .8)), 
+                    url("../img/design-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 9rem;
+}
+
+.devices__box {
+    text-align: center;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* .devices__tablet {
+    margin-right: 7rem;
+} */
+
+.devices__phone {
+    position: absolute;
+    bottom: -10rem;
+    left: 65%;
+}
+
+/* mobile land*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .devices__tablet {
+        width: 90%;
+    }
+
+    .devices__phone {
+        width: 40%;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .devices__tablet {
+        width: 90%;
+    }
+
+    .devices__phone {
+        width: 40%;
+    }
+}

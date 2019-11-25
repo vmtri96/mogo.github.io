@@ -1,0 +1,119 @@
+.blog {
+    margin-top: 9rem;
+}
+
+.blog__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+}
+
+/* mobile land*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .blog__cards {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .blog__cards {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+}
+
+.blog__cards .card {
+    text-decoration: none;
+}
+
+.blog__cards .card .card__photo-box {
+    height: 24rem;
+    width: 100%;
+    position: relative;
+}
+
+.blog__cards .card .card__photo-box .card__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog__cards .card .card__photo-box .card__date-box {
+    background-color: var(--color-blue-light);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.blog__cards .card .card__photo-box .card__date-box .card__date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.blog__cards .card .card__photo-box .card__date-box .card__month {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+}
+
+.blog__cards .card .card__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-black);
+    margin-top: 1.5rem;
+    text-align: start;
+}
+
+.blog__cards .card .card__content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-black-light);
+    margin-top: 1.5rem;
+    text-align: start;
+}
+
+.blog__cards .card .card__content::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: var(--color-grey-1);
+    margin-top: 1.5rem;
+}
+
+.blog__cards .card .card__footer {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--color-black-light);
+    text-align: start;
+    padding-top: 1.5rem;
+}
+
+.blog__cards .card .card__footer .views-icon {
+    font-size: 1.5rem;
+    color: var(--color-blue-light);
+    margin-right: .5rem;
+}
+
+.blog__cards .card .card__footer .comments-icon {
+    font-size: 1.5rem;
+    color: var(--color-blue-light);
+    margin-left: 1rem;
+    margin-right: .5rem;
+}

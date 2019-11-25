@@ -1,0 +1,32 @@
+.features {
+    background-color: var(--color-blue-light);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+}
+
+.feature {
+    padding: 7rem 0;
+    border-left: 1px solid var(--color-blue-light-2);
+    text-align: center;
+}
+
+.feature:last-child {
+    border-right: 1px solid var(--color-blue-light-2);
+}
+.feature__value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7rem;
+    color: white;
+}
+
+.feature__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 1rem;
+}
